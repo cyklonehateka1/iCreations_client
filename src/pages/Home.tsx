@@ -15,7 +15,7 @@ const Home = () => {
           </h2>
           <hr className="border border-t-[#D9D9D9] lg:w-[6rem] w-[2rem] lg:ml-10 ml-3" />
         </div>
-        <p className="font-sfregular text-[0.8rem]">
+        <p className="font-sfregular text-[0.8rem] text-justify">
           At iCreations, we're passionate about building impactful digital
           products and innovative solutions for startups and big companies
           alike. Our dynamic approach sets you apart from the competition, and

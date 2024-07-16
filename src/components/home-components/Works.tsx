@@ -24,10 +24,10 @@ const Works = () => {
           your growth.
         </p>
       </div>
-      <div className="flex flex-col sm:flex-row sm:items-center w-full px-5 gap-6 justify-center mb-10">
-        <div className="sm:w-[43%] w-full lg:mx-4 mb-8 sm:mb-0">
+      <div className="flex flex-col sm:flex-row sm:items-center w-full px-5 gap-6 justify-center lg:mb-10 sm:mb-10">
+        <div className="sm:w-[43%] w-full lg:mx-4 mb-3 sm:mb-0">
           <div
-            className="w-full xl:h-[34rem] lg:h-[25rem] h-[20rem] bg-no-repeat bg-center bg-cover rounded-2xl mb-4"
+            className="w-full xl:h-[30rem] lg:h-[25rem] h-[20rem] bg-no-repeat bg-center bg-cover rounded-2xl mb-4"
             style={{ backgroundImage: `url(${obroni})` }}
           ></div>
           <div className="">
@@ -37,9 +37,9 @@ const Works = () => {
             <p className="font-sfregular text-[0.8rem]">Print, Digital & Web</p>
           </div>
         </div>
-        <div className="sm:w-[43%] w-full lg:mx-4 mb-8 sm:mb-0">
+        <div className="sm:w-[43%] w-full lg:mx-4 mb-3 sm:mb-0">
           <div
-            className="w-full xl:h-[34rem] lg:h-[25rem] h-[20rem] bg-no-repeat bg-center bg-cover rounded-2xl mb-4"
+            className="w-full xl:h-[30rem] lg:h-[25rem] h-[20rem] bg-no-repeat bg-center bg-cover rounded-2xl mb-4"
             style={{ backgroundImage: `url(${nkrodo})` }}
           ></div>
           <div className="">
@@ -50,7 +50,7 @@ const Works = () => {
           </div>
         </div>
       </div>
-      <div className="lg:w-[89%] px-5 w-full items-center mb-10">
+      <div className="lg:w-[89%] w-full items-center lg:mb-10 mb-3 px-5 sm:px-12 md:px-[5rem] lg:px-0">
         <div
           className="w-full xl:h-[28rem] lg:h-[20rem] h-[15rem] rounded-2xl mb-4"
           style={{ backgroundImage: `url(${nirvana})` }}
@@ -62,10 +62,10 @@ const Works = () => {
           <p className="font-sfregular text-[0.8rem]">Web Development</p>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row items-center px-5 lg:px-0 sm:gap-3 lg:gap-0 mb-10 w-full justify-center">
-        <div className="sm:w-[28%] w-full lg:mx-4 mb-10 lg:mb-0">
+      <div className="flex flex-col sm:flex-row items-center px-5 lg:px-0 sm:gap-3 lg:gap-0 mb-3 lg:mb-10 w-full justify-center">
+        <div className="sm:w-[28%] w-full lg:mx-4 mb-3 lg:mb-0">
           <div
-            className="w-full xl:h-[24rem] lg:h-[19rem] h-[15rem] bg-cover bg-center bg-no-repeat rounded-2xl mb-4"
+            className="w-full xl:h-[20rem] lg:h-[19rem] h-[15rem] bg-cover bg-center bg-no-repeat rounded-2xl mb-4"
             style={{ backgroundImage: `url(${obroni})` }}
           ></div>
           <div className="">
@@ -75,9 +75,9 @@ const Works = () => {
             <p className="font-sfregular text-[0.8rem]">Web Development</p>
           </div>
         </div>
-        <div className="sm:w-[28%] w-full lg:mx-4 mb-10 lg:mb-0">
+        <div className="sm:w-[28%] w-full lg:mx-4 mb-3 lg:mb-0">
           <div
-            className="w-full xl:h-[24rem] lg:h-[19rem] h-[15rem] bg-cover bg-center bg-no-repeat rounded-2xl mb-4"
+            className="w-full xl:h-[20rem] lg:h-[19rem] h-[15rem] bg-cover bg-center bg-no-repeat rounded-2xl mb-4"
             style={{ backgroundImage: `url(${nkrodo})` }}
           ></div>
           <div className="">
@@ -87,9 +87,9 @@ const Works = () => {
             <p className="font-sfregular text-[0.8rem]">Web Development</p>
           </div>
         </div>
-        <div className="sm:w-[28%] w-full lg:mx-4 mb-10 lg:mb-0">
+        <div className="sm:w-[28%] w-full lg:mx-4 mb-3 lg:mb-0">
           <div
-            className="w-full xl:h-[24rem] lg:h-[19rem] h-[15rem] bg-cover bg-center bg-no-repeat rounded-2xl mb-4"
+            className="w-full xl:h-[20rem] lg:h-[19rem] h-[15rem] bg-cover bg-center bg-no-repeat rounded-2xl mb-4"
             style={{ backgroundImage: `url(${nkrodo})` }}
           ></div>
           <div className="">
@@ -100,10 +100,10 @@ const Works = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row w-full justify-center sm:gap-6 lg:gap-0 px-5 mb-10">
-        <div className="sm:w-[43%] w-full lg:mx-4 mb-10">
+      <div className="flex flex-col sm:flex-row w-full justify-center sm:gap-6 lg:gap-0 mb-10 px-5 lg:px-0">
+        <div className="sm:w-[43%] w-full lg:mx-4 lg:mb-10 mb-3">
           <div
-            className="w-full xl:h-[34rem] lg:h-[25rem] h-[20rem] bg-no-repeat bg-center bg-cover rounded-2xl mb-4"
+            className="w-full xl:h-[30rem] lg:h-[25rem] h-[20rem] bg-no-repeat bg-center bg-cover rounded-2xl mb-4"
             style={{ backgroundImage: `url(${obroni})` }}
           ></div>
           <div className="">
@@ -115,7 +115,7 @@ const Works = () => {
         </div>
         <div className="sm:w-[43%] w-full lg:mx-4">
           <div
-            className="w-full xl:h-[34rem] lg:h-[25rem] h-[20rem] bg-no-repeat bg-center bg-cover rounded-2xl mb-4"
+            className="w-full xl:h-[30rem] lg:h-[25rem] h-[20rem] bg-no-repeat bg-center bg-cover rounded-2xl mb-4"
             style={{ backgroundImage: `url(${nkrodo})` }}
           ></div>
           <div className="">

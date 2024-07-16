@@ -48,46 +48,48 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-full flex flex-col sm:flex-row justify-between lg:pt-20 pt-8 lg:px-7 px-2">
-          <div className="mb-10">
-            <div className="flex lg:my-6 my-2 items-center">
-              <p className="font-inter font-semibold text-[0.8rem] w-[5rem] uppercase">
-                Address:
+          <div className="mb-10 flex justify-center md:justify-start">
+            <div className="">
+              <div className="flex lg:my-6 my-2 items-center">
+                <p className="font-inter font-semibold text-[0.8rem] w-[5rem] uppercase">
+                  Address:
+                </p>
+                <span className="text-[#293E3D] font-inter text-[0.8rem]">
+                  Obeyeyie, Ga - West
+                </span>
+              </div>
+              <div className="flex lg:my-6 my-2 items-center">
+                <p className="font-inter font-semibold text-[0.8rem] w-[5rem] uppercase">
+                  Phone:
+                </p>
+                <span className="text-[#293E3D] font-inter text-[0.8rem]">
+                  +233 555155972 / 0593667545
+                </span>
+              </div>
+              <div className="flex lg:my-6 my-2 items-center">
+                <p className="font-inter font-semibold text-[0.8rem] w-[5rem] uppercase">
+                  Email:
+                </p>
+                <span className="font-inter text-[0.8rem]">
+                  info@icreationsghana.com
+                </span>
+              </div>
+              <p className="font-inter font-semibold text-[0.8rem]">
+                iCREATIONS GHANA LOGO
               </p>
-              <span className="text-[#293E3D] font-inter text-[0.8rem]">
-                Obeyeyie, Ga - West
-              </span>
             </div>
-            <div className="flex lg:my-6 my-2 items-center">
-              <p className="font-inter font-semibold text-[0.8rem] w-[5rem] uppercase">
-                Phone:
-              </p>
-              <span className="text-[#293E3D] font-inter text-[0.8rem]">
-                +233 555155972 / 0593667545
-              </span>
-            </div>
-            <div className="flex lg:my-6 my-2 items-center">
-              <p className="font-inter font-semibold text-[0.8rem] w-[5rem] uppercase">
-                Email:
-              </p>
-              <span className="font-inter text-[0.8rem]">
-                info@icreationsghana.com
-              </span>
-            </div>
-            <p className="font-inter font-semibold text-[0.8rem]">
-              iCREATIONS GHANA LOGO
-            </p>
           </div>
-          <div className="">
+          <div className="flex flex-col items-center md:items-start w-full md:w-auto">
             <p className="font-inter font-semibold text-[0.8rem] uppercase mb-3">
               Newsletter:
             </p>
-            <div className="flex items-center mb-6">
+            <div className="flex items-center mb-6 flex-col md:flex-row w-full">
               <input
                 type="email"
                 placeholder="Your email here"
-                className="px-2 mr-2 border outline-none border-[#E0E0E0] h-8 lg:h-10 lg:w-60 w-48 rounded-lg"
+                className="px-2 mr-2 border outline-none border-[#E0E0E0] h-12 lg:h-10 lg:w-60 md:w-48 w-full mb-3 md:mb-0 rounded-lg"
               />
-              <button className="lg:px-7 px-5 lg:h-10 h-8 bg-black text-white font-sfregular text-[0.8rem] rounded-md">
+              <button className="lg:px-7 px-5 lg:h-10 h-14 w-full md:w-auto bg-black text-white font-sfregular text-[0.8rem] rounded-md">
                 Subscribe
               </button>
             </div>
@@ -108,7 +110,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-black lg:px-28 px-5 lg:py-6 py-3 text-white">
+      <div className="bg-black lg:px-28 px-5 lg:py-6 py-3 text-white w-full flex justify-center md:justify-start">
         <p className="font-montserrat text-[0.8rem]">
           iCreations Ghana© 2024 All Rights Reserved
         </p>

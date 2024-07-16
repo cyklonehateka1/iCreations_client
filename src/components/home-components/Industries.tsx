@@ -50,7 +50,7 @@ const Industries = () => {
   const totalSlides = slides.length;
   const slidesToShow = 3;
   const slidesToScroll = 1;
-  const slideWidth = 12.5; // 10rem + 2 * 2rem
+  // const slideWidth = 12.5; // 10rem + 2 * 2rem
 
   const nextSlide = () => {
     const nextIndex = currentSlide + slidesToScroll;
@@ -71,18 +71,18 @@ const Industries = () => {
   };
 
   return (
-    <div className="bg-[#EEF0F9] flex flex-col items-center justify-center lg:px-32 px-2 lg:pt-20 pt-10 pb-7 w-full">
+    <div className="bg-[#EEF0F9] flex flex-col items-center justify-center lg:px-32 px-2 lg:pt-20 pt-3 pb-7 w-full">
       <div className="lg:px-[33%] px-5 text-center mb-7">
         <h4 className="font-sfmedium font-medium lg:text-[1.8rem] text-[1.7rem] mb-2">
           Solutions for all industries
         </h4>
-        <p className="font-sfregular lg:text-[0.938rem] text-[0.8rem]">
+        <p className="font-sfregular lg:text-[0.938rem] text-[1rem]">
           We serve a whole range of industries with professional website and
           digital solutions.
         </p>
       </div>
-      <div className="flex w-full justify-between flex-col lg:flex-row">
-        <div className="lg:w-[40%] w-full mb-10 lg:mb-0 h-[20rem] lg:h-[31rem] border-2 border-white p-3 rounded-lg">
+      <div className="flex w-full justify-between flex-col-reverse md:flex-row">
+        <div className="md:w-[40%] w-full mb-10 lg:mb-0 h-[20rem] lg:h-[31rem] border-2 border-white p-3 rounded-lg">
           <div className="w-full bg-white h-full rounded-lg p-3">
             <div
               className="w-full h-full rounded-xl bg-cover bg-no-repeat bg-center"
@@ -90,34 +90,36 @@ const Industries = () => {
             ></div>
           </div>
         </div>
-        <div className="lg:w-[59%] w-full flex items-start relative">
-          <img
+        <div className="md:w-[59%] w-full flex items-start relative">
+          <span onClick={prevSlide}>
+            <img
             src={arrowLeft}
             alt="Previous"
-            className="absolute top-20 left-0 transform -translate-y-1/2 cursor-pointer"
-            onClick={prevSlide}
-          />
+            className="absolute md:top-20 top-[3.5rem] left-0 transform -translate-y-1/2 cursor-pointer"
+            
+            />
+          </span>
           <div className="lg:px-10 px-2 w-full overflow-hidden">
             <div className="w-full overflow-hidden">
               <div
-                className="flex gap-10 justify-between mb-5 w-full h-[10rem] transition-transform duration-500 ease-in-out"
+                className="flex lg:gap-5 gap-4 justify-start lg:mb-5 mb-0 items-center md:items-start w-full md:h-[10rem] h-[7rem] transition-transform duration-500 ease-in-out px-3 md:px-0 flex-shrink-0"
                 style={{
                   transform: `translateX(-${
-                    currentSlide * (slideWidth * slidesToScroll)
-                  }rem)`,
+                    currentSlide * (33.5 * slidesToScroll)
+                  }%)`,
                 }}
               >
                 {slides.map((slide, index) => (
                   <div
                     key={index}
-                    className="border-2 cursor-pointer border-white rounded-lg p-2 h-[10rem] w-[10rem] flex-shrink-0"
+                    className="border-2 cursor-pointer border-white rounded-lg p-2 h-[6rem] w-[30%] lg:h-[10rem] lg:w-[30%] flex-shrink-0"
                   >
                     <div
                       className={`bg-white px-2 w-full flex justify-center flex-col items-center h-full rounded-lg ${slide.bgColor}`}
                     >
-                      <img src={slide.img} alt="" className="mb-5 " />
+                      <img src={slide.img} alt="" className="md:mb-5 mb-1 md:w-auto w-8" />
                       <p
-                        className={`font-inter text-[0.8rem] text-center ${slide.textColor}`}
+                        className={`font-inter md:text-[0.8rem] text-[0.7rem] text-center ${slide.textColor}`}
                       >
                         {slide.text}
                       </p>
@@ -151,12 +153,12 @@ const Industries = () => {
               </div>
             </div>
           </div>
-          <img
+          <span onClick={nextSlide}><img
             src={arrowRight}
             alt="Next"
-            className="absolute top-20 right-0 transform -translate-y-1/2 cursor-pointer"
-            onClick={nextSlide}
-          />
+            className="absolute md:top-20 top-[3.5rem] right-0 transform -translate-y-1/2 cursor-pointer"
+            
+          /></span>
         </div>
       </div>
     </div>
