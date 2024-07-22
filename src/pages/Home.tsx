@@ -7,7 +7,11 @@ const Home = () => {
   return (
     <div className="bg-white">
       <Hero />
+<<<<<<< HEAD
       <div className="lg:py-20 py-10 text-center lg:px-[20%] xs:px-10 sm:px-[10%] md:px-[15%] px-5 flex flex-col items-center">
+=======
+      <div className="lg:py-20 pt-20 pb-10 text-center lg:px-[20%] xs:px-10 sm:px-[10%] md:px-[15%] px-5 flex flex-col items-center">
+>>>>>>> 7654ea0 (Done with the initial design)
         <div className="flex items-center mb-5">
           <hr className="border border-t-[#D9D9D9] lg:w-[6rem] w-[2rem] lg:mr-10 mr-3" />
           <h2 className="font-sfbold font-bold lg:text-[3rem] text-[1.2rem]">

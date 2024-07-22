@@ -93,10 +93,9 @@ const Industries = () => {
         <div className="md:w-[59%] w-full flex items-start relative">
           <span onClick={prevSlide}>
             <img
-            src={arrowLeft}
-            alt="Previous"
-            className="absolute md:top-20 top-[3.5rem] left-0 transform -translate-y-1/2 cursor-pointer"
-            
+              src={arrowLeft}
+              alt="Previous"
+              className="absolute md:top-20 top-[3.5rem] left-0 transform -translate-y-1/2 cursor-pointer"
             />
           </span>
           <div className="lg:px-10 px-2 w-full overflow-hidden">
@@ -117,7 +116,11 @@ const Industries = () => {
                     <div
                       className={`bg-white px-2 w-full flex justify-center flex-col items-center h-full rounded-lg ${slide.bgColor}`}
                     >
-                      <img src={slide.img} alt="" className="md:mb-5 mb-1 md:w-auto w-8" />
+                      <img
+                        src={slide.img}
+                        alt=""
+                        className="md:mb-5 mb-1 md:w-auto w-8"
+                      />
                       <p
                         className={`font-inter md:text-[0.8rem] text-[0.7rem] text-center ${slide.textColor}`}
                       >
@@ -153,12 +156,13 @@ const Industries = () => {
               </div>
             </div>
           </div>
-          <span onClick={nextSlide}><img
-            src={arrowRight}
-            alt="Next"
-            className="absolute md:top-20 top-[3.5rem] right-0 transform -translate-y-1/2 cursor-pointer"
-            
-          /></span>
+          <span onClick={nextSlide}>
+            <img
+              src={arrowRight}
+              alt="Next"
+              className="absolute md:top-20 top-[3.5rem] right-0 transform -translate-y-1/2 cursor-pointer"
+            />
+          </span>
         </div>
       </div>
     </div>
