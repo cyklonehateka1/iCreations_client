@@ -14,11 +14,7 @@ export const sliderData: SliderData[] = [
   {
     bg: clientBG,
     desc: "A beautiful coperate website development for an international prestige brand",
-<<<<<<< HEAD
-    heading: "Tailored to fit your brand",
-=======
     heading: "Luxury E-commerce Experience",
->>>>>>> 7654ea0 (Done with the initial design)
     img: mainHeroBG,
     logo: mainHeroBG,
     service: "Web Design",
@@ -26,9 +22,6 @@ export const sliderData: SliderData[] = [
   {
     bg: mainHeroBG,
     desc: "A beautiful coperate website development for an international prestige brand",
-<<<<<<< HEAD
-    heading: "Tailored to fit your brand",
-=======
     heading: "Luxury E-commerce Experience",
     img: clientBG,
     logo: mainHeroBG,
@@ -46,7 +39,6 @@ export const sliderData: SliderData[] = [
     bg: mainHeroBG,
     desc: "A beautiful coperate website development for an international prestige brand",
     heading: "Luxury E-commerce Experience",
->>>>>>> 7654ea0 (Done with the initial design)
     img: clientBG,
     logo: mainHeroBG,
     service: "Web Design",
@@ -62,27 +54,7 @@ export const sliderData: SliderData[] = [
   {
     bg: mainHeroBG,
     desc: "A beautiful coperate website development for an international prestige brand",
-<<<<<<< HEAD
-    heading: "Tailored to fit your brand",
-    img: clientBG,
-    logo: mainHeroBG,
-    service: "Web Design",
-  },
-  {
-    bg: clientBG,
-    desc: "A beautiful coperate website development for an international prestige brand",
-    heading: "Tailored to fit your brand",
-    img: mainHeroBG,
-    logo: mainHeroBG,
-    service: "Web Design",
-  },
-  {
-    bg: mainHeroBG,
-    desc: "A beautiful coperate website development for an international prestige brand",
-    heading: "Tailored to fit your brand",
-=======
     heading: "Luxury E-commerce Experience",
->>>>>>> 7654ea0 (Done with the initial design)
     img: clientBG,
     logo: mainHeroBG,
     service: "Web Design",
