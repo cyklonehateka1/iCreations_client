@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 import facebook_icon from "../assets/icons/facebook.svg";
 import linkedin_icon from "../assets/icons/linkedin.svg";
 import twitter_icon from "../assets/icons/twitter.svg";
+import logo from "../assets/icons/logo.png";
 const Footer = () => {
   return (
     <div className="w-full">
-      <div className="bg-white w-full lg:px-24 px-5 lg:py-20 py-10 flex flex-col items-center">
+      {/* <div className="bg-white w-full lg:px-24 px-5 lg:py-20 py-10 flex flex-col items-center">
         <div className="flex flex-col lg:flex-row w-full justify-between lg:pl-16 rounded-lg border border-[#E3DFDF]">
           <div className="flex flex-col lg:w-[40%] w-full lg:my-20 my-8 px-5">
             <h3 className="font-montserrat font-bold lg:text-[2.9rem] text-[2.3rem] mb-2">
@@ -109,11 +110,57 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      </div> */}
+      <div className="w-full h-full">
+        <div className="w-full container mx-auto grid md:grid-cols-3 grid-cols-1 gap-3 py-[25px]">
+          <div className="w-full flex flex-col gap-3">
+            <div className="flex items-center gap-2">
+              <div className="w-[59px] h-[59px] object-cover">
+                <img
+                  src={logo}
+                  alt="logo"
+                  width={1000}
+                  height={1000}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h2 className="text-lg font-bold">iCreations Global</h2>
+            </div>
+          </div>
+          <div className="flex flex-col gap-3">
+            <h1 className="text-lg font-semibold">Services</h1>
+            <div className="flex flex-col gap-2">
+              <p className="text-sm text-[#8E8E93]">Branding</p>
+              <p className="text-sm text-[#8E8E93]">Product design</p>
+              <p className="text-sm text-[#8E8E93]">Marketing</p>
+              <p className="text-sm text-[#8E8E93]">Development</p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-3">
+            <h1 className="text-lg font-semibold">Contacts us</h1>
+            <div className="flex flex-col gap-2">
+              <p className="text-sm text-[#8E8E93]">info@novacreatives.com</p>
+              <p className="text-sm text-[#8E8E93]">(233) 555 - 155972</p>
+              <p className="text-sm text-[#8E8E93]">
+                Oyarifa School Junction Opp. Shell Filling Station
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="bg-black lg:px-28 px-5 lg:py-6 py-3 text-white w-full flex justify-center md:justify-start">
-        <p className="font-montserrat text-[0.8rem]">
-          iCreations Ghana© 2024 All Rights Reserved
-        </p>
+      <div className="container mx-auto w-full my-10">
+        <hr className="mb-7" />
+        <div className="w-full flex items-center justify-center md:justify-between ">
+          <p className="font-montserrat text-[0.8rem]">
+            Copyright © 2024 iCreations
+          </p>
+          <p className="font-montserrat text-[0.8rem]">
+            All Rights Reserved |
+            <span className="text-[#FF3B30]">Terms and Conditions</span> |{" "}
+            <span className="text-[#FF3B30]">Privacy</span>
+            Policy
+          </p>
+        </div>
       </div>
     </div>
   );

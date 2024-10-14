@@ -2,6 +2,8 @@ import Hero from "../components/home-components/Hero";
 import Industries from "../components/home-components/Industries";
 import Services from "../components/home-components/Services";
 import Works from "../components/home-components/Works";
+import OurServices from "../components/OurServices";
+import Topics from "../components/Topic";
 
 const Home = () => {
   return (
@@ -27,9 +29,11 @@ const Home = () => {
           drive for results fuels continuous innovation.
         </p>
       </div>
+      <OurServices />
       <Services />
       <Works />
       <Industries />
+      <Topics />
     </div>
   );
 };
