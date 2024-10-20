@@ -254,3 +254,16 @@
 /* className={` text-white text-[4rem] font-bold leading-[1] mb-7 ${
                   show ? (animateOut ? "fadeout-right" : "fadein") : "hidden"
                 }`} */
+
+#image_holder:hover {
+  #hove_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #image_zoon {
+    transition: all;
+    transition-duration: 0.7;
+    transform: scale(1.05);
+  }
+}

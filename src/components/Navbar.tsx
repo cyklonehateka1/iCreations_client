@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const Navbar = () => {
   return (
@@ -22,12 +23,24 @@ const Navbar = () => {
           Services
         </Link>
         <Link
+          to="/project"
+          className="px-7 font-sfregular cursor-pointer my-2 sm:my-0 text-[1.5rem] sm:text-[0.938rem]"
+        >
+          Project
+        </Link>
+        <Link
           to="/"
           className="px-7 font-sfregular cursor-pointer my-2 sm:my-0 text-[1.5rem] sm:text-[0.938rem]"
         >
           Contact Us
         </Link>
       </div>
+      <button className="text-sm h-[40px] px-3 bg-[#FF0000] text-[#fff] rounded-md flex items-center gap-2">
+        Start my project{" "}
+        <span className="w-5 h-5 rounded-full flex items-center justify-center bg-white">
+          <MdKeyboardArrowRight className="text-[#000]" />
+        </span>
+      </button>
     </div>
   );
 };

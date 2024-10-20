@@ -17,8 +17,8 @@ const Topics = () => {
         </div>
       </div>
       <div className="w-full h-full container">
-        <div className="w-full h-full mt-7 border border-[#E5EAF4] md:flex items-center gap-8">
-          <div className="w-full h-[567px] object-cover rounded-l-xl">
+        <div className="w-full h-full mt-7 border border-[#E5EAF4] md:rounded-l-xl md:flex items-center gap-8">
+          <div className="w-full h-[567px] object-cover rounded-md md:rounded-l-xl">
             <img
               src={TopicImage}
               alt="Topic"

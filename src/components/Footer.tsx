@@ -3,6 +3,10 @@ import facebook_icon from "../assets/icons/facebook.svg";
 import linkedin_icon from "../assets/icons/linkedin.svg";
 import twitter_icon from "../assets/icons/twitter.svg";
 import logo from "../assets/icons/logo.png";
+import { FaFacebookF } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="w-full">
@@ -112,7 +116,7 @@ const Footer = () => {
         </div>
       </div> */}
       <div className="w-full h-full">
-        <div className="w-full container mx-auto grid md:grid-cols-3 grid-cols-1 gap-3 py-[25px]">
+        <div className="w-full container mx-auto grid md:grid-cols-3 grid-cols-1 gap-7 py-[25px]">
           <div className="w-full flex flex-col gap-3">
             <div className="flex items-center gap-2">
               <div className="w-[59px] h-[59px] object-cover">
@@ -126,14 +130,40 @@ const Footer = () => {
               </div>
               <h2 className="text-lg font-bold">iCreations Global</h2>
             </div>
+            <p className="text-sm text-[#8E8E93]">
+              At iCreations, we're passionate about building impactful digital
+              products and innovative solutions for startups and big companies
+              alike. Our dynamic approach sets you apart from the competition,
+              and our collaborative process ensures your values and growth plans
+              are at the forefront. We work with clients across Africa,
+              including South Africa and Kenya, and internationally.{" "}
+            </p>
+            <div className="flex items-center gap-3">
+              <Link to="/">
+                <FaFacebookF className="text-xl text-[#FF0000]" />
+              </Link>
+              <Link to="/">
+                <FaTwitter className="text-xl text-[#FF0000]" />
+              </Link>
+              <Link to="/">
+                <AiFillInstagram className="text-xl text-[#FF0000]" />
+              </Link>
+              <Link to="/">
+                <FaLinkedinIn className="text-xl text-[#FF0000]" />
+              </Link>
+            </div>
           </div>
           <div className="flex flex-col gap-3">
             <h1 className="text-lg font-semibold">Services</h1>
             <div className="flex flex-col gap-2">
-              <p className="text-sm text-[#8E8E93]">Branding</p>
-              <p className="text-sm text-[#8E8E93]">Product design</p>
-              <p className="text-sm text-[#8E8E93]">Marketing</p>
-              <p className="text-sm text-[#8E8E93]">Development</p>
+              <p className="text-sm text-[#8E8E93] cursor-pointer">Branding</p>
+              <p className="text-sm text-[#8E8E93] cursor-pointer">
+                Product design
+              </p>
+              <p className="text-sm text-[#8E8E93] cursor-pointer">Marketing</p>
+              <p className="text-sm text-[#8E8E93] cursor-pointer">
+                Development
+              </p>
             </div>
           </div>
           <div className="flex flex-col gap-3">
