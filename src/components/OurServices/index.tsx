@@ -1,14 +1,21 @@
-import React from "react";
+import { useEffect } from "react";
 import Icone1 from "../../assets/icons/icon1.png";
 import Icone2 from "../../assets/icons/icon2.png";
 import Icone3 from "../../assets/icons/icon3.png";
 import Icone4 from "../../assets/icons/icon4.png";
+import Aos from "aos";
 
 const OurServices = () => {
+  useEffect(() => {
+    Aos.init({ duration: 800 });
+  }, []);
   return (
     <section className="w-full h-full  flex flex-col items-center justify-center ">
       <div className="w-full h-[15vh] bg-gradient-to-b from-[#FDEAF5] to-[#fdeaf5ba]"></div>
-      <div className="w-full flex items-center justify-center">
+      <div
+        data-aos="fade-up"
+        className="w-full flex items-center justify-center"
+      >
         <div>
           <div className="flex items-center mb-5">
             <hr className="border border-t-[#D9D9D9] lg:w-[6rem] w-[2rem] lg:mr-10 mr-3" />
@@ -19,7 +26,10 @@ const OurServices = () => {
           </div>
         </div>
       </div>
-      <div className="w-full container mx-auto grid md:grid-cols-4 grid-cols-1 my-10 gap-4">
+      <div
+        data-aos="fade-up"
+        className="w-full container mx-auto grid md:grid-cols-4 grid-cols-1 my-10 gap-4"
+      >
         <div className="w-full h-[250px] rounded-lg shadow p-5 flex flex-col justify-between">
           <div className="w-[40px] h-[40px] object-cover rounded-full p-2 bg-black">
             <img

@@ -1,11 +1,19 @@
+import { useEffect } from "react";
 import obroni from "../../assets/images/obroni.jpg";
 import nirvana from "../../assets/images/nirvana.jpg";
 import nkrodo from "../../assets/images/nkrodo.jpg";
+import Aos from "aos";
 
 const Works = () => {
+  useEffect(() => {
+    Aos.init({ duration: 800 });
+  }, []);
   return (
     <div className="flex flex-col items-center lg:px-14 px-0 w-full">
-      <div className="lg:py-20 py-10 text-center lg:px-[20%] xs:px-10 sm:px-[10%] md:px-[15%] px-5 flex flex-col items-center">
+      <div
+        data-aos="fade-up"
+        className="lg:py-20 py-10 text-center lg:px-[20%] xs:px-10 sm:px-[10%] md:px-[15%] px-5 flex flex-col items-center"
+      >
         <div className="flex items-center mb-5">
           <hr className="border border-t-[#D9D9D9] lg:w-[6rem] w-[2rem] lg:mr-10 mr-3" />
           <h2 className="font-sfbold font-bold lg:text-[3rem] text-[1.2rem]">
@@ -25,7 +33,10 @@ const Works = () => {
         </p>
       </div>
       <div className="flex flex-col sm:flex-row sm:items-center w-full px-5 gap-6 justify-center lg:mb-10 sm:mb-10">
-        <div className="sm:w-[43%] w-full lg:mx-4 mb-3 sm:mb-0">
+        <div
+          data-aos="fade-up"
+          className="sm:w-[43%] w-full lg:mx-4 mb-3 sm:mb-0"
+        >
           <div
             className="w-full xl:h-[30rem] lg:h-[25rem] h-[20rem] bg-no-repeat bg-center bg-cover rounded-2xl mb-4"
             style={{ backgroundImage: `url(${obroni})` }}
@@ -37,7 +48,10 @@ const Works = () => {
             <p className="font-sfregular text-[0.8rem]">Print, Digital & Web</p>
           </div>
         </div>
-        <div className="sm:w-[43%] w-full lg:mx-4 mb-3 sm:mb-0">
+        <div
+          data-aos="fade-up"
+          className="sm:w-[43%] w-full lg:mx-4 mb-3 sm:mb-0"
+        >
           <div
             className="w-full xl:h-[30rem] lg:h-[25rem] h-[20rem] bg-no-repeat bg-center bg-cover rounded-2xl mb-4"
             style={{ backgroundImage: `url(${nkrodo})` }}
@@ -50,7 +64,10 @@ const Works = () => {
           </div>
         </div>
       </div>
-      <div className="lg:w-[89%] w-full items-center lg:mb-10 mb-3 px-5 sm:px-12 md:px-[5rem] lg:px-0">
+      <div
+        data-aos="zoom-in"
+        className="lg:w-[89%] w-full items-center lg:mb-10 mb-3 px-5 sm:px-12 md:px-[5rem] lg:px-0"
+      >
         <div
           className="w-full xl:h-[28rem] lg:h-[20rem] h-[15rem] rounded-2xl mb-4"
           style={{ backgroundImage: `url(${nirvana})` }}
@@ -63,7 +80,10 @@ const Works = () => {
         </div>
       </div>
       <div className="flex flex-col sm:flex-row items-center px-5 lg:px-0 sm:gap-3 lg:gap-0 mb-3 lg:mb-10 w-full justify-center">
-        <div className="sm:w-[28%] w-full lg:mx-4 mb-3 lg:mb-0">
+        <div
+          data-aos="fade-up"
+          className="sm:w-[28%] w-full lg:mx-4 mb-3 lg:mb-0"
+        >
           <div
             className="w-full xl:h-[20rem] lg:h-[19rem] h-[15rem] bg-cover bg-center bg-no-repeat rounded-2xl mb-4"
             style={{ backgroundImage: `url(${obroni})` }}
@@ -75,7 +95,10 @@ const Works = () => {
             <p className="font-sfregular text-[0.8rem]">Web Development</p>
           </div>
         </div>
-        <div className="sm:w-[28%] w-full lg:mx-4 mb-3 lg:mb-0">
+        <div
+          data-aos="fade-up"
+          className="sm:w-[28%] w-full lg:mx-4 mb-3 lg:mb-0"
+        >
           <div
             className="w-full xl:h-[20rem] lg:h-[19rem] h-[15rem] bg-cover bg-center bg-no-repeat rounded-2xl mb-4"
             style={{ backgroundImage: `url(${nkrodo})` }}
@@ -87,7 +110,10 @@ const Works = () => {
             <p className="font-sfregular text-[0.8rem]">Web Development</p>
           </div>
         </div>
-        <div className="sm:w-[28%] w-full lg:mx-4 mb-3 lg:mb-0">
+        <div
+          data-aos="fade-up"
+          className="sm:w-[28%] w-full lg:mx-4 mb-3 lg:mb-0"
+        >
           <div
             className="w-full xl:h-[20rem] lg:h-[19rem] h-[15rem] bg-cover bg-center bg-no-repeat rounded-2xl mb-4"
             style={{ backgroundImage: `url(${nkrodo})` }}
@@ -101,7 +127,10 @@ const Works = () => {
         </div>
       </div>
       <div className="flex flex-col sm:flex-row w-full justify-center sm:gap-6 lg:gap-0 mb-10 px-5 lg:px-0">
-        <div className="sm:w-[43%] w-full lg:mx-4 lg:mb-10 mb-3">
+        <div
+          data-aos="zoom-in"
+          className="sm:w-[43%] w-full lg:mx-4 lg:mb-10 mb-3"
+        >
           <div
             className="w-full xl:h-[30rem] lg:h-[25rem] h-[20rem] bg-no-repeat bg-center bg-cover rounded-2xl mb-4"
             style={{ backgroundImage: `url(${obroni})` }}
@@ -113,7 +142,7 @@ const Works = () => {
             <p className="font-sfregular text-[0.8rem]">Print, Digital & Web</p>
           </div>
         </div>
-        <div className="sm:w-[43%] w-full lg:mx-4">
+        <div data-aos="zoom-in" className="sm:w-[43%] w-full lg:mx-4">
           <div
             className="w-full xl:h-[30rem] lg:h-[25rem] h-[20rem] bg-no-repeat bg-center bg-cover rounded-2xl mb-4"
             style={{ backgroundImage: `url(${nkrodo})` }}

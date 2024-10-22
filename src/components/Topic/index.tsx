@@ -1,11 +1,18 @@
-import React from "react";
+import { useEffect } from "react";
 import TopicImage from "../../assets/images/topic.png";
 import Check from "../../assets/icons/check.png";
+import Aos from "aos";
 
 const Topics = () => {
+  useEffect(() => {
+    Aos.init({ duration: 800 });
+  }, []);
   return (
     <section className="w-full h-full  flex flex-col items-center justify-center mt-10">
-      <div className="w-full flex items-center justify-center">
+      <div
+        data-aos="fade-up"
+        className="w-full flex items-center justify-center"
+      >
         <div className="text-center">
           <h2 className="font-sfbold font-bold lg:text-[3rem] text-[1.2rem]">
             Topic for the week
@@ -16,9 +23,12 @@ const Topics = () => {
           </p>
         </div>
       </div>
-      <div className="w-full h-full container">
+      <div data-aos="fade-up" className="w-full h-full container">
         <div className="w-full h-full mt-7 border border-[#E5EAF4] md:rounded-l-xl md:flex items-center gap-8">
-          <div className="w-full h-[567px] object-cover rounded-md md:rounded-l-xl">
+          <div
+            data-aos="zoom-in"
+            className="w-full h-[567px] object-cover rounded-md md:rounded-l-xl"
+          >
             <img
               src={TopicImage}
               alt="Topic"

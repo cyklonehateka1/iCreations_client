@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
-import facebook_icon from "../assets/icons/facebook.svg";
-import linkedin_icon from "../assets/icons/linkedin.svg";
-import twitter_icon from "../assets/icons/twitter.svg";
+
 import logo from "../assets/icons/logo.png";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";

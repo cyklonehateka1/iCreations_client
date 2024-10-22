@@ -1,8 +1,10 @@
-import React from "react";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Ser1 from "../assets/images/ser-1.png";
 import Ser2 from "../assets/images/ser-2.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import OurServices from "../components/OurServices";
+
 import Icone1 from "../assets/icons/icon1.png";
 import Icone2 from "../assets/icons/icon2.png";
 import Icone3 from "../assets/icons/icon3.png";
@@ -41,6 +43,9 @@ const brand_strategy = [
   },
 ];
 const Services = () => {
+  useEffect(() => {
+    Aos.init({ duration: 800 });
+  }, []);
   return (
     <div className="w-full h-full">
       <div className="w-full md:h-[15vh] h-[5vh] bg-gradient-to-b from-[#FDEAF5] to-[#fdeaf5ba]"></div>
@@ -90,7 +95,10 @@ const Services = () => {
           </div>
         </div>
         <div className="w-full h-auto my-10 grid md:grid-cols-3 grid-cols-1 gap-4">
-          <div className="w-full h-full shadow-lg rounded-lg">
+          <div
+            data-aos="fade-up"
+            className="w-full h-full shadow-lg rounded-lg"
+          >
             <div className="w-full h-[246px] object-cover rounded-t-lg">
               <img
                 src={Ser2}
@@ -109,7 +117,10 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="w-full h-full shadow-lg rounded-lg">
+          <div
+            data-aos="fade-up"
+            className="w-full h-full shadow-lg rounded-lg"
+          >
             <div className="w-full h-[246px] object-cover rounded-t-lg">
               <img
                 src={Ser2}
@@ -128,7 +139,10 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="w-full h-full shadow-lg rounded-lg">
+          <div
+            data-aos="fade-up"
+            className="w-full h-full shadow-lg rounded-lg"
+          >
             <div className="w-full h-[246px] object-cover rounded-t-lg">
               <img
                 src={Ser2}
@@ -151,7 +165,7 @@ const Services = () => {
       </div>
       <div className="w-full md:h-[15vh] h-[5vh] bg-gradient-to-b from-[#FDEAF5] to-[#fdeaf5ba]"></div>
       <div className="container mx-auto my-10 bg-[#FAFAFA] p-3 rounded-lg">
-        <div className="w-full my-5 ">
+        <div data-aos="fade-up" className="w-full my-5 ">
           <h1 className="text-3xl mb-1">More services</h1>
           <p className="text-sm text-[#667299]">
             We specialize in creating high-impact digital solutions that drive
@@ -159,7 +173,10 @@ const Services = () => {
           </p>
         </div>
         <div className="w-full container mx-auto grid md:grid-cols-4 grid-cols-1 my-10 gap-4">
-          <div className="w-full h-[250px] rounded-lg shadow p-5 flex flex-col justify-between">
+          <div
+            data-aos="fade-up"
+            className="w-full h-[250px] rounded-lg shadow p-5 flex flex-col justify-between"
+          >
             <div className="w-[40px] h-[40px] object-cover rounded-full p-2 bg-black">
               <img
                 src={Icone4}
@@ -178,7 +195,10 @@ const Services = () => {
               Learn more
             </button>
           </div>
-          <div className="w-full h-[250px] rounded-lg shadow p-5 flex flex-col justify-between">
+          <div
+            data-aos="fade-up"
+            className="w-full h-[250px] rounded-lg shadow p-5 flex flex-col justify-between"
+          >
             <div className="w-[40px] h-[40px] object-cover p-2 rounded-full bg-black">
               <img
                 src={Icone3}
@@ -198,7 +218,10 @@ const Services = () => {
               Learn more
             </button>
           </div>
-          <div className="w-full h-[250px] rounded-lg shadow p-5 flex flex-col justify-between">
+          <div
+            data-aos="fade-up"
+            className="w-full h-[250px] rounded-lg shadow p-5 flex flex-col justify-between"
+          >
             <div className="w-[40px] h-[40px] object-cover p-2 rounded-full bg-black">
               <img
                 src={Icone2}
@@ -217,7 +240,10 @@ const Services = () => {
               Learn more
             </button>
           </div>
-          <div className="w-full h-[250px] rounded-lg shadow p-5 flex flex-col justify-between">
+          <div
+            data-aos="fade-up"
+            className="w-full h-[250px] rounded-lg shadow p-5 flex flex-col justify-between"
+          >
             <div className="w-[40px] h-[40px] object-cover p-2 rounded-full bg-black">
               <img
                 src={Icone1}

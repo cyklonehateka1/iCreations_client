@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import healthBg from "../../assets/images/health.jpg";
 import arrowLeft from "../../assets/icons/leftarrow.svg";
 import arrowRight from "../../assets/icons/rightarrow.svg";
 import health_icon_white from "../../assets/icons/health_white.png";
 import health_icon_black from "../../assets/icons/health_black.svg";
+import Aos from "aos";
 
 const Industries = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -69,10 +70,13 @@ const Industries = () => {
       setCurrentSlide(0);
     }
   };
+  useEffect(() => {
+    Aos.init({ duration: 800 });
+  }, []);
 
   return (
     <div className="bg-[#EEF0F9] flex flex-col items-center justify-center lg:px-32 px-2 lg:pt-20 pt-3 pb-7 w-full">
-      <div className="lg:px-[33%] px-5 text-center mb-7">
+      <div data-aos="fade-up" className="lg:px-[33%] px-5 text-center mb-7">
         <h4 className="font-sfmedium font-medium lg:text-[1.8rem] text-[1.7rem] mb-2">
           Solutions for all industries
         </h4>
@@ -82,7 +86,10 @@ const Industries = () => {
         </p>
       </div>
       <div className="flex w-full justify-between flex-col-reverse md:flex-row">
-        <div className="md:w-[40%] w-full mb-10 lg:mb-0 h-[20rem] lg:h-[31rem] border-2 border-white p-3 rounded-lg">
+        <div
+          data-aos="zoom-in"
+          className="md:w-[40%] w-full mb-10 lg:mb-0 h-[20rem] lg:h-[31rem] border-2 border-white p-3 rounded-lg"
+        >
           <div className="w-full bg-white h-full rounded-lg p-3">
             <div
               className="w-full h-full rounded-xl bg-cover bg-no-repeat bg-center"
@@ -90,7 +97,10 @@ const Industries = () => {
             ></div>
           </div>
         </div>
-        <div className="md:w-[59%] w-full flex items-start relative">
+        <div
+          data-aos="fade-up"
+          className="md:w-[59%] w-full flex items-start relative"
+        >
           <span onClick={prevSlide}>
             <img
               src={arrowLeft}

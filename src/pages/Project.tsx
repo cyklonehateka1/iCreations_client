@@ -1,11 +1,8 @@
-import React from "react";
-import Works from "../components/home-components/Works";
-import obroni from "../assets/images/obroni.jpg";
+import { useEffect } from "react";
 import nirvana1 from "../assets/images/case1.png";
-import nirvana2 from "../assets/images/case2.png";
-import nkrodo from "../assets/images/nkrodo.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import ContactUs from "../components/ContactUs";
+import Aos from "aos";
 
 const data = [
   {
@@ -30,6 +27,9 @@ const data = [
   },
 ];
 const Project = () => {
+  useEffect(() => {
+    Aos.init({ duration: 800 });
+  }, []);
   return (
     <div className="w-full h-full ">
       <div className="w-full md:h-[15vh] h-[5vh] bg-gradient-to-b from-[#FDEAF5] to-[#fdeaf5ba]"></div>
@@ -86,7 +86,10 @@ const Project = () => {
         </div>
       </div>
       <div className="w-full md:h-[15vh] h-[5vh] bg-gradient-to-b from-[#FDEAF5] to-[#fdeaf5ba]"></div>
-      <section id='contact-us' className="w-full h-full flex items-center justify-center bg-[#F9F9F9] mx-auto">
+      <section
+        id="contact-us"
+        className="w-full h-full flex items-center justify-center bg-[#F9F9F9] mx-auto"
+      >
         <ContactUs />
       </section>
     </div>
