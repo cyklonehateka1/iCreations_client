@@ -30,7 +30,7 @@ const OurServices = () => {
         data-aos="fade-up"
         className="w-full container mx-auto grid md:grid-cols-4 grid-cols-1 my-10 gap-4"
       >
-        <div className="w-full h-[250px] rounded-lg shadow p-5 flex flex-col justify-between">
+        <div className="w-full h-[250px] hover:shadow-md  rounded-lg shadow p-5 flex flex-col justify-between">
           <div className="w-[40px] h-[40px] object-cover rounded-full p-2 bg-black">
             <img
               src={Icone4}
@@ -46,10 +46,10 @@ const OurServices = () => {
             to life with creativity, strategy, and passion.
           </p>
           <button className="text-sm hover:text-red text-start">
-            Learn more
+            <a href="/services">Learn more</a>
           </button>
         </div>
-        <div className="w-full h-[250px] rounded-lg shadow p-5 flex flex-col justify-between">
+        <div className="w-full h-[250px] hover:shadow-md rounded-lg shadow p-5 flex flex-col justify-between">
           <div className="w-[40px] h-[40px] object-cover p-2 rounded-full bg-black">
             <img
               src={Icone3}
@@ -65,10 +65,10 @@ const OurServices = () => {
             targeted campaigns and engaging content to reach the right audience.
           </p>
           <button className="text-sm hover:text-red text-start">
-            Learn more
+            <a href="/services">Learn more</a>
           </button>
         </div>
-        <div className="w-full h-[250px] rounded-lg shadow p-5 flex flex-col justify-between">
+        <div className="w-full h-[250px] hover:shadow-md rounded-lg shadow p-5 flex flex-col justify-between">
           <div className="w-[40px] h-[40px] object-cover p-2 rounded-full bg-black">
             <img
               src={Icone2}
@@ -84,10 +84,10 @@ const OurServices = () => {
             your brand, enhancing user experience and market appeal.
           </p>
           <button className="text-sm hover:text-red text-start">
-            Learn more
+            <a href="/services">Learn more</a>
           </button>
         </div>
-        <div className="w-full h-[250px] rounded-lg shadow p-5 flex flex-col justify-between">
+        <div className="w-full h-[250px] hover:shadow-md rounded-lg shadow p-5 flex flex-col justify-between">
           <div className="w-[40px] h-[40px] object-cover p-2 rounded-full bg-black">
             <img
               src={Icone1}
@@ -104,7 +104,7 @@ const OurServices = () => {
             integration.
           </p>
           <button className="text-sm hover:text-red text-start">
-            Learn more
+            <a href="/services">Learn more</a>
           </button>
         </div>
       </div>

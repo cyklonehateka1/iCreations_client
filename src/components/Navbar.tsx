@@ -39,7 +39,7 @@ const Navbar = () => {
           Project
         </Link>
         <Link
-          to="/project/#contact-us"
+          to="/project#contact-us"
           className="font-sfregular cursor-pointer my-2 sm:my-0 text-[1.5rem] sm:text-[0.938rem]"
         >
           Contact Us

@@ -49,7 +49,7 @@ const Services = () => {
   return (
     <div className="w-full h-full">
       <div className="w-full md:h-[15vh] h-[5vh] bg-gradient-to-b from-[#FDEAF5] to-[#fdeaf5ba]"></div>
-      <div className="w-full md:h-[40vh] h-[20vh] md:mb-[80px] mb-[20px] relative">
+      <div className="w-full md:h-[20vh] h-[20vh] md:mb-[80px] mb-[20px] relative">
         <div className=" absolute bottom-[40px] md:left-[40px] z-20 left-2">
           <h1 className="text-lg md:text-5xl font-sfregular font-bold">
             Empowering Businesses with
