@@ -5,6 +5,7 @@ import nirvana1 from "../assets/images/case1.png";
 import nirvana2 from "../assets/images/case2.png";
 import nkrodo from "../assets/images/nkrodo.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import ContactUs from "../components/ContactUs";
 
 const data = [
   {
@@ -30,7 +31,7 @@ const data = [
 ];
 const Project = () => {
   return (
-    <div className="w-full h-full container mx-auto">
+    <div className="w-full h-full ">
       <div className="w-full md:h-[15vh] h-[5vh] bg-gradient-to-b from-[#FDEAF5] to-[#fdeaf5ba]"></div>
       <div className="w-full md:h-[40vh] h-[20vh] relative">
         <div className=" absolute bottom-[40px] md:left-[40px] left-2">
@@ -46,7 +47,7 @@ const Project = () => {
           </p>
         </div>
       </div>
-      <div className="w-full md:my-5 my-2 border border-1 md:p-7 p-3 shadow">
+      <div className="w-full md:my-5 my-2 border border-1 md:p-7 p-3 shadow container mx-auto">
         <div className="w-full container grid md:grid-cols-2 grid-cols-1 gap-10">
           {data?.map((item, index) => (
             <div key={index} className="w-full h-auto">
@@ -84,7 +85,10 @@ const Project = () => {
           ))}
         </div>
       </div>
-      <Works />
+      <div className="w-full md:h-[15vh] h-[5vh] bg-gradient-to-b from-[#FDEAF5] to-[#fdeaf5ba]"></div>
+      <section id='contact-us' className="w-full h-full flex items-center justify-center bg-[#F9F9F9] mx-auto">
+        <ContactUs />
+      </section>
     </div>
   );
 };

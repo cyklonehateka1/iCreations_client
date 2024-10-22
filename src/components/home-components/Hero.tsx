@@ -57,7 +57,7 @@ const Hero = () => {
             }`}
             style={{ backgroundImage: `url(${activeDetails.bg})` }}
           ></div>
-          <div className="h-full w-full px-5 lg:px-16 absolute bg-[#000000be] z-100 top-0 flex md:justify-between justify-center flex-col md:flex-row">
+          <div className="h-full w-full px-5 lg:px-16 absolute bg-[#000000be] z-20 top-0 flex md:justify-between justify-center flex-col md:flex-row">
             <div className="md:h-full flex flex-col justify-center items-center md:items-start w-full md:w-[50%]">
               <h4
                 className={`text-white uppercase mb-2 font-sfregular text-[0.8rem] ${
