@@ -7,7 +7,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className="w-full">
+    <div className="w-full p-3">
       {/* <div className="bg-white w-full lg:px-24 px-5 lg:py-20 py-10 flex flex-col items-center">
         <div className="flex flex-col lg:flex-row w-full justify-between lg:pl-16 rounded-lg border border-[#E3DFDF]">
           <div className="flex flex-col lg:w-[40%] w-full lg:my-20 my-8 px-5">

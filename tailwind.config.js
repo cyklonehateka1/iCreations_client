@@ -10,6 +10,7 @@ export default {
         sfbold: ["SfBold", "serif"],
         sfmedium: ["SfMedium", "serif"],
         inter: ["Inter", "serif"],
+        sflight: [ "sf pro display"],
       },
       zIndex: {
         100: "100",
