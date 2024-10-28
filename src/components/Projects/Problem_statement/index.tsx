@@ -1,5 +1,3 @@
-import React from "react";
-
 const ProblemStatement = () => {
   return (
     <div className="w-full min-h-[30vh] flex  items-center justify-center">

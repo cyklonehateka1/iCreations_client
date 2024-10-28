@@ -1,4 +1,3 @@
-import React from "react";
 import OverView1 from "../../../assets/images/project/pro1.png";
 import OverView2 from "../../../assets/images/project/pro2.png";
 import OverView3 from "../../../assets/images/project/pro3.png";

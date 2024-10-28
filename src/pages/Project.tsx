@@ -1,6 +1,6 @@
-import { FC, useEffect, useState, useRef } from "react";
-import nirvana1 from "../assets/images/case1.png";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { useEffect, useState, useRef } from "react";
+// import nirvana1 from "../assets/images/case1.png";
+// import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import ContactUs from "../components/ContactUs";
 import Aos from "aos";
 import Overview from "../components/Projects/Overview";
@@ -10,28 +10,28 @@ import UserPersonas from "../components/Projects/User_personas";
 import KeyFeatures from "../components/Projects/Key_features";
 import ResultsImpacts from "../components/Projects/Results_impacts";
 
-const data = [
-  {
-    image: nirvana1,
-    header: "Gorgeous Glow Branding",
-    p: "Gorgeous Glow Branding",
-  },
-  {
-    image: nirvana1,
-    header: "Gorgeous Glow Branding",
-    p: "Gorgeous Glow Branding",
-  },
-  {
-    image: nirvana1,
-    header: "Gorgeous Glow Branding",
-    p: "Gorgeous Glow Branding",
-  },
-  {
-    image: nirvana1,
-    header: "Gorgeous Glow Branding",
-    p: "Gorgeous Glow Branding",
-  },
-];
+// const data = [
+//   {
+//     image: nirvana1,
+//     header: "Gorgeous Glow Branding",
+//     p: "Gorgeous Glow Branding",
+//   },
+//   {
+//     image: nirvana1,
+//     header: "Gorgeous Glow Branding",
+//     p: "Gorgeous Glow Branding",
+//   },
+//   {
+//     image: nirvana1,
+//     header: "Gorgeous Glow Branding",
+//     p: "Gorgeous Glow Branding",
+//   },
+//   {
+//     image: nirvana1,
+//     header: "Gorgeous Glow Branding",
+//     p: "Gorgeous Glow Branding",
+//   },
+// ];
 
 interface Section {
   id: string;
