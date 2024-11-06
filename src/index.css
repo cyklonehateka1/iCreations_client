@@ -22,3 +22,28 @@
   font-family: "SfMedium";
   src: url("./assets/fonts/SFPRODISPLAYMEDIUM.OTF") format("opentype");
 }
+
+.home_labs {
+  background-image: url("./assets/images/home_labs.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* height:70vh; */
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+#image_holder:hover {
+  #hove_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #image_zoon {
+    transition: all;
+    transition-duration: 0.32;
+    transform: scale(1.05);
+  }
+}

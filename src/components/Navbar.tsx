@@ -1,25 +1,28 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
+import Bars from "../assets/images/bars.png";
 
 const Navbar = () => {
   const [isBar, setIsBar] = useState(false);
   return (
     <div className="flex justify-between items-center sticky top-0 left-0 right-0 py-5 xl:px-16 lg:px-10 px-5 w-full bg-white z-[10000]">
-      <div className=" flex items-center gap-2">
-        <div
-          className="sm:hidden flex flex-col gap-1"
-          onClick={() => setIsBar(!isBar)}
-        >
-          <span className="w-7 h-1 bg-black"></span>
-          <span className="w-7 h-1 bg-black"></span>
-          <span className="w-7 h-1 bg-black"></span>
-        </div>
+      <div className="md:w-auto w-full flex items-center justify-between gap-2">
         <h4 className="font-sfregular font-bold text-[1rem] cursor-pointer">
-          <a href="/">iCreations Ghana</a>
+          <a href="/" className="text-lg font-sfbold font-bold">
+            Empathy labs
+          </a>
         </h4>
+        <div className="sm:hidden " onClick={() => setIsBar(!isBar)}>
+          <img
+            src={Bars}
+            alt="bars"
+            width={1000}
+            height={1000}
+            className="w-[30px] h-[30px]"
+          />
+        </div>
       </div>
-      <div className="sm:relative w-full sm:w-auto text-center sm:text-right pt-10 sm:pt-0 top-[-20rem] sm:top-0 sm:right-0 absolute bg-[#EEF0F9] sm:bg-white flex flex-col sm:flex-row gap-4 right-0 h-[20rem] sm:h-auto rounded-br-2xl rounded-bl-2xl">
+      <div className="flex items-center gap-3 ">
         <Link
           to="/"
           className="font-sfregular cursor-pointer my-2 sm:my-0 text-[1.5rem] sm:text-[0.938rem]"

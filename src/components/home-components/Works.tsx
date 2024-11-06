@@ -1,38 +1,106 @@
 import { useEffect } from "react";
-import obroni from "../../assets/images/obroni.jpg";
-import nirvana from "../../assets/images/nirvana.jpg";
-import nkrodo from "../../assets/images/nkrodo.jpg";
+import obroni from "../../assets/images/case1.png";
+import nirvana from "../../assets/images/case3.png";
+import nkrodo from "../../assets/images/case2.png";
+import case4 from "../../assets/images/case4.png";
+import case5 from "../../assets/images/case5.png";
 import Aos from "aos";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
+const project = [
+  {
+    image: [obroni],
+    title: "Gorgeous Glow",
+    label: "Branding",
+    id: 23,
+  },
+  {
+    image: [nkrodo],
+    title: "Creedz",
+    label: "Product design",
+    id: 29,
+  },
+  {
+    image: [nirvana],
+    title: "Ark Clothing",
+    label: "Branding",
+    id: 29,
+  },
+  {
+    image: [case4],
+    title: "Ark Clothing",
+    label: "Branding",
+    id: 29,
+  },
+  {
+    image: [case5],
+    title: "Ark Clothing",
+    label: "Branding ",
+    id: 29,
+  },
+];
 const Works = () => {
   useEffect(() => {
     Aos.init({ duration: 800 });
   }, []);
   return (
-    <div className="flex flex-col items-center lg:px-14 px-0 w-full">
-      <div
-        data-aos="fade-up"
-        className="lg:py-20 py-10 text-center lg:px-[20%] xs:px-10 sm:px-[10%] md:px-[15%] px-5 flex flex-col items-center"
-      >
-        <div className="flex items-center mb-5">
+    <div
+      data-aos="fade-up"
+      className="flex flex-col items-center container mx-auto w-full"
+    >
+      <div className="text-center mb-3 flex flex-col items-center">
+        <div className="flex items-center mb-1">
           <hr className="border border-t-[#D9D9D9] lg:w-[6rem] w-[2rem] lg:mr-10 mr-3" />
           <h2 className="font-sfbold font-bold lg:text-[3rem] text-[1.2rem]">
             Our Works
           </h2>
           <hr className="border border-t-[#D9D9D9] lg:w-[6rem] w-[2rem] lg:ml-10 ml-3" />
         </div>
-        <p className="font-sfregular text-[0.8rem]">
-          Over the years, we have worked on a diverse range of projects,
-          including crafting user-friendly and visually stunning websites
-          tailored to your brand, developing cohesive brand identities that
-          resonate with your audience, creating memorable logos that encapsulate
-          your brand's essence, and conducting in-depth UX research to optimize
-          user experiences and drive engagement. At iCreations, we take pride in
-          delivering exceptional results that elevate your brand and support
-          your growth.
+        <p className="font-sfregular text-sm">
+          Explore our latest projects and see what we can create together
         </p>
       </div>
-      <div className="flex flex-col sm:flex-row sm:items-center w-full px-5 gap-6 justify-center lg:mb-10 sm:mb-10">
+
+      <div className="my-2 w-full md:w-5/6 h-full ">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5">
+          {project?.map((item, index) => (
+            <div key={index} className="w-full">
+              <div
+                id="image_holder"
+                className="w-full md:h-[438px] h-[300px] object-cover rounded-lg relative overflow-hidden aspect-square hover:cursor-pointer"
+              >
+                <img
+                  src={item.image[0]}
+                  alt="image"
+                  width={1000}
+                  height={1000}
+                  id="image_zoon"
+                  className="w-full h-full rounded-lg hover:scale-125"
+                />
+                <div
+                  id="hove_box"
+                  className="w-full  items-center justify-center absolute hidden transition-all ease-out top-0 left-0 bottom-0 right-0 bg-[#00000051]"
+                >
+                  <div className="w-fit px-3 py-2 border border-[#fff] rounded-md flex items-center justify-center">
+                    <h1 className="text-sm cursor-pointer text-[#fff]">
+                      View case study
+                    </h1>
+                    <div className="w-[20px] h-[20px] ml-2 rounded-full border border-1 flex items-center justify-center">
+                      <MdOutlineKeyboardArrowRight className="text-sm text-[#fff]" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="my-2">
+                <h1 className=" text-2xl">{item?.title}</h1>
+                <p className="text-sm">{item.label}</p>
+              </div>
+            </div>
+          ))}{" "}
+        </div>
+      </div>
+
+      {/* <div className="flex flex-col sm:flex-row sm:items-center w-full px-5 gap-6 justify-center ">
         <div
           data-aos="fade-up"
           className="sm:w-[43%] w-full lg:mx-4 mb-3 sm:mb-0"
@@ -154,7 +222,7 @@ const Works = () => {
             <p className="font-sfregular text-[0.8rem]">Branding & Labels </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
